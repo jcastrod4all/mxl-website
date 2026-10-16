@@ -13,6 +13,9 @@ npm run serve
 
 ## GitHub Pages
 
+Con GitHub Free, el repositorio debe ser publico para usar Pages. Mantenerlo
+privado requiere un plan de GitHub compatible.
+
 El workflow `.github/workflows/pages.yml` publica exclusivamente `_site` al
 recibir un push en `master`. Tambien se puede ejecutar desde Actions.
 Antes del primer despliegue, seleccionar **GitHub Actions** en
