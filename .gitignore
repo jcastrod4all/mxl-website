@@ -1,0 +1,15 @@
+node_modules
+_site
+.cache
+.DS_Store
+*.log
+
+# Local design tools and working references (not deployment inputs)
+.github/skills/
+.github/agents/impeccable-*.agent.md
+.github/hooks/impeccable.json
+.impeccable/
+DESIGN.md
+PRODUCT.md
+/mxl-brandToolKit-2026-9-23.png
+/mxl-www-mockup-1-2026-9-23.png

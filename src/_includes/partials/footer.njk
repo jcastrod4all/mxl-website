@@ -1,0 +1,37 @@
+{% set homeUrl = lang == 'es' and '/es/' or '/' %}
+<footer class="site-footer" id="site-footer">
+  <div class="site-footer__grid container">
+    <div class="site-footer__identity">
+      <a class="site-footer__brand" href="{{ homeUrl }}" aria-label="{{ org.name }} — {{ t.nav.home }}">
+        <svg viewBox="0 0 52 32" aria-hidden="true">
+          <path d="M3 16 15 5h22l12 11-12 11H15L3 16Z"/>
+          <path d="M14 16c5-8 19-8 24 0-5 8-19 8-24 0Z"/>
+          <path d="M22 16c2-3 6-3 8 0-2 3-6 3-8 0Z"/>
+        </svg>
+        <strong>MXL <span>Mexilink</span></strong>
+      </a>
+      <p>{{ org.tagline }}</p>
+      <p class="site-footer__pending">{{ t.footer.placeholderNotice }}</p>
+    </div>
+
+    <nav class="site-footer__directory" aria-label="{{ t.footer.navigationLabel }}">
+      <ul class="site-footer__nav">
+        <li><a href="{{ homeUrl }}">{{ t.nav.home }}</a></li>
+        <li><a href="{{ lang == 'es' and '/es/servicios/' or '/services/' }}">{{ t.nav.services }}</a></li>
+        <li><a href="{{ homeUrl }}#brands">{{ t.nav.brands }}</a></li>
+        <li><a href="{{ homeUrl }}#careers">{{ t.nav.careers }}</a></li>
+        <li><a href="{{ lang == 'es' and '/es/contacto/' or '/contact/' }}">{{ t.nav.contact }}</a></li>
+      </ul>
+    </nav>
+
+    <div class="site-footer__action">
+      <p>{{ t.footer.businessPrompt }}</p>
+      <a href="{{ lang == 'es' and '/es/contacto/' or '/contact/' }}">{{ t.footer.businessLink }} <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+
+  <div class="site-footer__base container">
+    <p>&copy; {{ currentYear }} {{ org.name }}. {{ t.footer.rightsReserved }}</p>
+    <a href="{{ altPath or (lang == 'es' and '/' or '/es/') }}" hreflang="{{ lang == 'es' and 'en' or 'es' }}" rel="alternate">{{ t.languageSwitch }}</a>
+  </div>
+</footer>

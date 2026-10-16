@@ -1,0 +1,25 @@
+---
+layout: base.njk
+permalink: /es/servicios/
+title: Servicios de Logística Transfronteriza
+description: Descubre los servicios de agencia aduanal, transporte de carga, consultoría comercial y almacenaje de Mexilink para la frontera México-Estados Unidos.
+translationKey: services
+breadcrumbs:
+  - name: Inicio
+    url: /es/
+  - name: Servicios
+    url: /es/servicios/
+---
+<article class="container">
+  <h1>Nuestros servicios</h1>
+  <p>Mexilink ofrece cuatro servicios principales que cubren cada etapa del movimiento de mercancía a través de la frontera México-Estados Unidos, desde el despacho aduanal hasta la entrega final.</p>
+
+  <div class="services-grid">
+    {% for service in servicesList %}
+    <a class="service-card" href="/es/servicios/{{ service.slug }}/">
+      <h2>{{ service.title }}</h2>
+      <p>{{ service.shortDescription }}</p>
+    </a>
+    {% endfor %}
+  </div>
+</article>

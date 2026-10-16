@@ -1,0 +1,22 @@
+{
+  "name": "Mexilink",
+  "tagline": "Construyendo marcas líderes desde el año 2000",
+  "description": "Mexilink integra importación, distribución, ventas, marketing y merchandising para construir marcas en los canales comerciales de Estados Unidos.",
+  "url": "https://mexilink.com",
+  "logo": "",
+  "contactVerified": false,
+  "locale": "es_MX",
+  "email": "hola@example.com",
+  "phone": "+1-555-010-2030",
+  "address": {
+    "streetAddress": "100 Corporate Drive, Suite 200",
+    "addressLocality": "El Paso",
+    "addressRegion": "TX",
+    "postalCode": "79901",
+    "addressCountry": "US"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/mexilink",
+    "https://twitter.com/mexilink"
+  ]
+}

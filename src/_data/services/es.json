@@ -1,0 +1,34 @@
+[
+  {
+    "slug": "agencia-aduanal",
+    "translationKey": "service-customs-brokerage",
+    "title": "Agencia Aduanal",
+    "shortDescription": "Agencia aduanal certificada que despacha tus embarques en la frontera México-Estados Unidos sin demoras ni riesgo de incumplimiento.",
+    "longDescription": "Nuestros agentes aduanales certificados gestionan la clasificación, valoración y documentación de cada embarque, para que tu mercancía cruce la frontera México-Estados Unidos a tiempo. Cumplimos con los requisitos de CBP de EE. UU. y del SAT en México, reduciendo el riesgo de multas, demoras e inspecciones.",
+    "icon": "customs"
+  },
+  {
+    "slug": "transporte-de-carga",
+    "translationKey": "service-freight-forwarding",
+    "title": "Transporte de Carga",
+    "shortDescription": "Transporte puerta a puerta por tierra, aire y mar, diseñado para cadenas de suministro transfronterizas.",
+    "longDescription": "Coordinamos transporte multimodal —camión, ferrocarril, aéreo y marítimo— con rastreo en tiempo real y gestión de cuenta dedicada, garantizando tiempos de tránsito predecibles para embarques transfronterizos e internacionales.",
+    "icon": "freight"
+  },
+  {
+    "slug": "consultoria-comercial",
+    "translationKey": "service-trade-consulting",
+    "title": "Consultoría Comercial",
+    "shortDescription": "Asesoría estratégica sobre aranceles, tratados comerciales y entrada al mercado en el corredor México-Estados Unidos.",
+    "longDescription": "Nuestros consultores de comercio exterior te ayudan a aprovechar los beneficios del T-MEC, optimizar clasificaciones arancelarias y diseñar una estrategia de comercio transfronterizo eficiente y conforme a la normativa.",
+    "icon": "consulting"
+  },
+  {
+    "slug": "almacenaje-y-distribucion",
+    "translationKey": "service-warehousing",
+    "title": "Almacenaje y Distribución",
+    "shortDescription": "Almacenes fiscales y centros de distribución cerca de la frontera para un cumplimiento rápido de pedidos.",
+    "longDescription": "Nuestros almacenes fiscales cerca de la frontera México-Estados Unidos te permiten almacenar, consolidar y distribuir inventario cerca del cruce, reduciendo los tiempos de entrega de última milla en ambos lados de la frontera.",
+    "icon": "warehouse"
+  }
+]

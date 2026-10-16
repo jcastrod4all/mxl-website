@@ -1,0 +1,32 @@
+{
+  "skipToContent": "Skip to content",
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "brands": "Brands",
+    "careers": "Careers",
+    "contact": "Contact"
+  },
+  "menuToggle": "Open main menu",
+  "menuClose": "Close main menu",
+  "languageSwitch": "Español",
+  "footer": {
+    "rightsReserved": "All rights reserved.",
+    "businessPrompt": "Ready to build your brand in the United States?",
+    "businessLink": "Start a business conversation",
+    "navigationLabel": "Footer navigation",
+    "historyLine": "Since 2000 / U.S. trade channels",
+    "placeholderNotice": "Corporate contact details are pending content migration.",
+    "addressLabel": "Address",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email"
+  },
+  "cta": {
+    "viewServices": "View our services",
+    "contactUs": "Contact us",
+    "learnMore": "Learn more",
+    "backToServices": "Back to all services"
+  },
+  "breadcrumbHome": "Home"
+}

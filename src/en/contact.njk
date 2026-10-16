@@ -1,0 +1,23 @@
+---
+layout: base.njk
+permalink: /contact/
+title: Contact Mexilink — Cross-Border Logistics Team
+description: Reach the Mexilink team for customs brokerage, freight forwarding, and cross-border trade consulting between the US and Mexico.
+translationKey: contact
+showLocalBusiness: true
+breadcrumbs:
+  - name: Home
+    url: /
+  - name: Contact
+    url: /contact/
+---
+<article class="container">
+  <h1>Contact us</h1>
+  <p>Have a shipment crossing the US-Mexico border, or need a trade compliance review? Reach our team directly using the details below — no forms, no waiting.</p>
+
+  <address class="contact-block">
+    <p><strong>{{ t.footer.addressLabel }}:</strong> {{ org.address.streetAddress }}, {{ org.address.addressLocality }}, {{ org.address.addressRegion }} {{ org.address.postalCode }}, {{ org.address.addressCountry }}</p>
+    <p><strong>{{ t.footer.phoneLabel }}:</strong> <a href="tel:{{ org.phone }}">{{ org.phone }}</a></p>
+    <p><strong>{{ t.footer.emailLabel }}:</strong> <a href="mailto:{{ org.email }}">{{ org.email }}</a></p>
+  </address>
+</article>

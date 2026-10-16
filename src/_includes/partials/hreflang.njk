@@ -1,0 +1,16 @@
+{#
+  Emits <link rel="alternate" hreflang="..."> tags for every localized version
+  of the current page, resolved via the static `translationMap` (built from
+  source data, not Eleventy's computed-data cascade — see _data/translationMap.js
+  for why). Requires `translationKey` in page frontmatter.
+#}
+{% if translationKey and translationMap[translationKey] %}
+  {% set map = translationMap[translationKey] %}
+  {% if map.en %}
+<link rel="alternate" hreflang="en" href="{{ org.url }}{{ map.en }}">
+<link rel="alternate" hreflang="x-default" href="{{ org.url }}{{ map.en }}">
+  {% endif %}
+  {% if map.es %}
+<link rel="alternate" hreflang="es" href="{{ org.url }}{{ map.es }}">
+  {% endif %}
+{% endif %}

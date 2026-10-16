@@ -1,0 +1,33 @@
+---
+layout: base.njk
+pagination:
+  data: services.en
+  size: 1
+  alias: service
+permalink: "/services/{{ service.slug }}/"
+eleventyComputed:
+  title: "{{ service.title }} — Cross-Border Service"
+  description: "{{ service.shortDescription }}"
+  translationKey: "{{ service.translationKey }}"
+  breadcrumbs:
+    - name: Home
+      url: /
+    - name: Services
+      url: /services/
+    - name: "{{ service.title }}"
+      url: "/services/{{ service.slug }}/"
+---
+<article class="container">
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+      {% for crumb in breadcrumbs %}
+      <li><a href="{{ crumb.url }}">{{ crumb.name }}</a></li>
+      {% endfor %}
+    </ol>
+  </nav>
+
+  <h1>{{ service.title }}</h1>
+  <p>{{ service.longDescription }}</p>
+
+  <p><a class="button button--ghost" href="/services/">{{ t.cta.backToServices }}</a></p>
+</article>

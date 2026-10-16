@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {% for crumb in breadcrumbs %}
+    {
+      "@type": "ListItem",
+      "position": {{ loop.index }},
+      "name": "{{ crumb.name }}",
+      "item": "{{ org.url }}{{ crumb.url }}"
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ]
+}

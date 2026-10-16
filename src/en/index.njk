@@ -1,0 +1,114 @@
+---
+layout: base.njk
+permalink: /
+title: Building Market-Leading Brands Across U.S. Trade Channels
+description: Since 2000, Mexilink has integrated importation, distribution, sales, marketing, and merchandising to build brands across United States trade channels.
+translationKey: home
+eleventyNavigation:
+  key: home
+---
+<article class="brand-home">
+  <section class="brand-hero">
+    <div class="brand-hero__grid container">
+      <div class="brand-hero__copy">
+        <h1>Building market-leading brands since 2000.</h1>
+        <p>Mexilink is the 360° partner that connects compliant importation, nationwide distribution, sales, marketing, and merchandising across U.S. trade channels.</p>
+        <div class="brand-actions">
+          <a class="brand-button" href="/contact/">Build your U.S. market plan <span aria-hidden="true">→</span></a>
+          <a class="brand-link" href="#integrated-model">Explore our integrated model <span aria-hidden="true">↘</span></a>
+        </div>
+      </div>
+
+      <figure class="brand-media brand-media--hero" aria-labelledby="hero-media-caption">
+        <div class="brand-media__scene" aria-hidden="true">
+          <span class="brand-media__aisle"></span>
+          <span class="brand-media__shelf brand-media__shelf--one"></span>
+          <span class="brand-media__shelf brand-media__shelf--two"></span>
+          <span class="brand-media__figure"></span>
+        </div>
+        <figcaption id="hero-media-caption">Corporate retail photography pending approval</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="brand-stories container" aria-label="How Mexilink builds brands">
+    <p class="rail-hint">Explore all three paths <span aria-hidden="true">→</span></p>
+    <a class="story-panel story-panel--brands" href="#brands">
+      <span class="story-panel__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 7h16v12H4zM8 7V4h8v3M8 11h8M8 15h5"/></svg></span>
+      <span class="story-panel__type">Brand building</span>
+      <strong>From market entry to consumer choice.</strong>
+      <p>One team aligns the operational and commercial work required to grow a brand.</p>
+      <span class="story-panel__action">See the model <b aria-hidden="true">→</b></span>
+    </a>
+
+    <a class="story-panel story-panel--channels" href="/services/">
+      <span class="story-panel__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 18V9l8-4 8 4v9M8 18v-5h8v5M3 20h18"/></svg></span>
+      <span class="story-panel__type">U.S. trade channels</span>
+      <strong>Built for the way America shops.</strong>
+      <p>Nationwide execution across the environments where brands are discovered and chosen.</p>
+      <span class="story-panel__action">Explore capabilities <b aria-hidden="true">→</b></span>
+    </a>
+
+    <a class="story-panel story-panel--talent" href="/contact/?intent=careers">
+      <span class="story-panel__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 11a4 4 0 1 1 8 0M5 20c.8-4 3.1-6 7-6s6.2 2 7 6M12 3v2"/></svg></span>
+      <span class="story-panel__type">Careers</span>
+      <strong>Build the brands people reach for.</strong>
+      <p>Join a transnational environment where operations, commerce, and brand-building meet.</p>
+      <span class="story-panel__action">Share your interest <b aria-hidden="true">→</b></span>
+    </a>
+  </section>
+
+  <section class="integrated-model container" id="integrated-model">
+    <figure class="brand-media brand-media--feature">
+      <div class="brand-media__scene brand-media__scene--operations" aria-hidden="true">
+        <span class="brand-media__route"></span>
+        <span class="brand-media__node brand-media__node--one"></span>
+        <span class="brand-media__node brand-media__node--two"></span>
+        <span class="brand-media__node brand-media__node--three"></span>
+      </div>
+      <figcaption>Corporate operations photography pending approval</figcaption>
+    </figure>
+
+    <div class="integrated-model__copy">
+      <h2>One accountable team. Seven connected disciplines.</h2>
+      <p>Most partners own a fragment of the journey. Mexilink connects the full system so brands can move from compliant entry to national channel execution without coordinating disconnected specialists.</p>
+      <ol class="capability-list">
+        <li>Compliance</li>
+        <li>Procurement</li>
+        <li>Warehousing</li>
+        <li>Transportation</li>
+        <li>Sales</li>
+        <li>Marketing</li>
+        <li>Merchandising</li>
+      </ol>
+      <a class="brand-link" href="/services/">Explore all capabilities <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+
+  <section class="brand-proof" id="brands">
+    <div class="container brand-proof__heading">
+      <div>
+        <h2>Brands are built in the field.</h2>
+        <p>Authorized portfolio marks and verified distribution evidence will replace these controlled development placeholders before launch.</p>
+      </div>
+      <a class="brand-button brand-button--light" href="/contact/">Discuss your brand <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="container brand-proof__rail" aria-label="Authorized brand assets pending">
+      {% for item in [1,2,3,4] %}
+      <div class="brand-proof__placeholder" role="img" aria-label="Authorized brand asset pending {{ item }}">
+        <span>Brand portfolio</span>
+        <small>Authorized asset pending / {{ item }}</small>
+      </div>
+      {% endfor %}
+    </div>
+    <p class="container rail-hint rail-hint--proof">Review all pending evidence wells <span aria-hidden="true">→</span></p>
+  </section>
+
+  <section class="brand-careers container" id="careers">
+    <div>
+      <h2>Build brands. Build a career with reach.</h2>
+      <p>Mexilink offers ambitious professionals a place to connect operational expertise with commercial impact across the United States.</p>
+    </div>
+    <a class="brand-button" href="/contact/?intent=careers">Share your career interest <span aria-hidden="true">→</span></a>
+  </section>
+</article>

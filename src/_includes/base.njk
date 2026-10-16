@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} | {{ org.name }}</title>
+  <meta name="description" content="{{ description or org.description }}">
+  <link rel="canonical" href="{{ org.url }}{{ page.url }}">
+
+  {% include "partials/hreflang.njk" %}
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ title }} | {{ org.name }}">
+  <meta property="og:description" content="{{ description or org.description }}">
+  <meta property="og:url" content="{{ org.url }}{{ page.url }}">
+  {% if org.logo %}<meta property="og:image" content="{{ org.logo }}">{% endif %}
+  <meta property="og:locale" content="{{ org.locale }}">
+  <meta property="og:locale:alternate" content="{{ lang == 'es' and 'en_US' or 'es_MX' }}">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ title }} | {{ org.name }}">
+  <meta name="twitter:description" content="{{ description or org.description }}">
+
+  <!-- Critical CSS inlined for fastest first paint -->
+  {% set criticalCss %}{% include "../css/critical.css" %}{% endset %}
+  <style>{{ criticalCss | replace("/fonts/", "/fonts/" | url) | safe }}</style>
+  <link rel="preload" href="/css/style.css" as="style">
+  <link rel="stylesheet" href="/css/style.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="/css/style.css"></noscript>
+
+  <script type="application/ld+json">{% include "schema/organization.njk" %}</script>
+  {% if service %}
+  <script type="application/ld+json">{% include "schema/service.njk" %}</script>
+  {% endif %}
+  {% if showLocalBusiness and org.contactVerified %}
+  <script type="application/ld+json">{% include "schema/localbusiness.njk" %}</script>
+  {% endif %}
+  {% if breadcrumbs %}
+  <script type="application/ld+json">{% include "schema/breadcrumbs.njk" %}</script>
+  {% endif %}
+</head>
+<body>
+  <a class="skip-link" href="#main-content">{{ t.skipToContent }}</a>
+
+  {% include "partials/header.njk" %}
+
+  <main id="main-content">
+    {{ content | safe }}
+  </main>
+
+  {% include "partials/footer.njk" %}
+
+  <script src="/js/main.js" defer></script>
+</body>
+</html>

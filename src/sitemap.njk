@@ -1,0 +1,28 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+{% for key, map in translationMap %}
+  {% if map.en %}
+  <url>
+    <loc>{{ siteUrl }}{{ map.en }}</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ siteUrl }}{{ map.en }}" />
+    {% if map.es %}
+    <xhtml:link rel="alternate" hreflang="es" href="{{ siteUrl }}{{ map.es }}" />
+    {% endif %}
+  </url>
+  {% endif %}
+  {% if map.es %}
+  <url>
+    <loc>{{ siteUrl }}{{ map.es }}</loc>
+    {% if map.en %}
+    <xhtml:link rel="alternate" hreflang="en" href="{{ siteUrl }}{{ map.en }}" />
+    {% endif %}
+    <xhtml:link rel="alternate" hreflang="es" href="{{ siteUrl }}{{ map.es }}" />
+  </url>
+  {% endif %}
+{% endfor %}
+</urlset>

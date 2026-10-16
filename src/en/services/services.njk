@@ -1,0 +1,25 @@
+---
+layout: base.njk
+permalink: /services/
+title: Cross-Border Logistics Services
+description: Explore Mexilink's customs brokerage, freight forwarding, trade consulting, and warehousing services for the US-Mexico border.
+translationKey: services
+breadcrumbs:
+  - name: Home
+    url: /
+  - name: Services
+    url: /services/
+---
+<article class="container">
+  <h1>Our services</h1>
+  <p>Mexilink offers four core services that cover every stage of moving goods across the US-Mexico border, from customs clearance to final delivery.</p>
+
+  <div class="services-grid">
+    {% for service in servicesList %}
+    <a class="service-card" href="/services/{{ service.slug }}/">
+      <h2>{{ service.title }}</h2>
+      <p>{{ service.shortDescription }}</p>
+    </a>
+    {% endfor %}
+  </div>
+</article>

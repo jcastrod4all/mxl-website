@@ -1,0 +1,17 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "{{ service.title }}",
+  "description": "{{ service.longDescription }}",
+  "url": "{{ org.url }}{{ page.url }}",
+  "inLanguage": "{{ lang }}",
+  "provider": {
+    "@type": "Organization",
+    "name": "{{ org.name }}",
+    "url": "{{ org.url }}{{ lang == 'es' and '/es/' or '/' }}"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "{{ lang == 'es' and 'México y Estados Unidos' or 'Mexico and the United States' }}"
+  }
+}

@@ -1,0 +1,31 @@
+{% set homeUrl = lang == 'es' and '/es/' or '/' %}
+<header class="site-header">
+  <a href="{{ homeUrl }}" class="site-header__logo" aria-label="{{ org.name }} — {{ t.nav.home }}">
+    <svg class="site-header__emblem" viewBox="0 0 52 32" aria-hidden="true">
+      <path d="M3 16 15 5h22l12 11-12 11H15L3 16Z"/>
+      <path d="M14 16c5-8 19-8 24 0-5 8-19 8-24 0Z"/>
+      <path d="M22 16c2-3 6-3 8 0-2 3-6 3-8 0Z"/>
+    </svg>
+    <span class="site-header__wordmark">MXL <small>Mexilink</small></span>
+    <span class="site-header__asset-note">{{ lang == 'es' and 'Logotipo corporativo provisional' or 'Temporary corporate logo treatment' }}</span>
+  </a>
+
+  <button type="button" class="menu-toggle" data-menu-toggle aria-expanded="false" aria-controls="primary-navigation">
+    <span class="menu-toggle__icon" aria-hidden="true"></span>
+    <span class="menu-toggle__label">{{ t.menuToggle }}</span>
+  </button>
+
+  <nav class="site-nav" id="primary-navigation" data-site-nav aria-label="{{ t.nav.home }}">
+    <ul class="site-nav__list">
+      <li><a href="{{ homeUrl }}" {% if page.url == homeUrl %}aria-current="page"{% endif %}>{{ t.nav.home }}</a></li>
+      <li><a href="{{ lang == 'es' and '/es/servicios/' or '/services/' }}">{{ t.nav.services }}</a></li>
+      <li><a href="{{ homeUrl }}#brands">{{ t.nav.brands }}</a></li>
+      <li><a href="{{ homeUrl }}#careers">{{ t.nav.careers }}</a></li>
+      <li><a href="{{ lang == 'es' and '/es/contacto/' or '/contact/' }}">{{ t.nav.contact }}</a></li>
+    </ul>
+    <a class="site-nav__lang" href="{{ altPath or (lang == 'es' and '/' or '/es/') }}" hreflang="{{ lang == 'es' and 'en' or 'es' }}" rel="alternate">
+      <span aria-hidden="true">{{ lang == 'es' and 'US' or 'MX' }}</span>
+      {{ t.languageSwitch }}
+    </a>
+  </nav>
+</header>

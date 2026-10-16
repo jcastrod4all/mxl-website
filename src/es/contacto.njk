@@ -1,0 +1,23 @@
+---
+layout: base.njk
+permalink: /es/contacto/
+title: Contacta a Mexilink — Equipo de Logística Transfronteriza
+description: Comunícate con el equipo de Mexilink para agencia aduanal, transporte de carga y consultoría de comercio transfronterizo entre Estados Unidos y México.
+translationKey: contact
+showLocalBusiness: true
+breadcrumbs:
+  - name: Inicio
+    url: /es/
+  - name: Contacto
+    url: /es/contacto/
+---
+<article class="container">
+  <h1>Contáctanos</h1>
+  <p>¿Tienes un embarque cruzando la frontera México-Estados Unidos o necesitas una revisión de cumplimiento comercial? Comunícate directamente con nuestro equipo usando los datos a continuación — sin formularios, sin esperas.</p>
+
+  <address class="contact-block">
+    <p><strong>{{ t.footer.addressLabel }}:</strong> {{ org.address.streetAddress }}, {{ org.address.addressLocality }}, {{ org.address.addressRegion }} {{ org.address.postalCode }}, {{ org.address.addressCountry }}</p>
+    <p><strong>{{ t.footer.phoneLabel }}:</strong> <a href="tel:{{ org.phone }}">{{ org.phone }}</a></p>
+    <p><strong>{{ t.footer.emailLabel }}:</strong> <a href="mailto:{{ org.email }}">{{ org.email }}</a></p>
+  </address>
+</article>

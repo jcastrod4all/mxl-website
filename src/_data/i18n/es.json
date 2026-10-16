@@ -1,0 +1,32 @@
+{
+  "skipToContent": "Saltar al contenido",
+  "nav": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "services": "Servicios",
+    "brands": "Marcas",
+    "careers": "Carreras",
+    "contact": "Contacto"
+  },
+  "menuToggle": "Abrir menú principal",
+  "menuClose": "Cerrar menú principal",
+  "languageSwitch": "English",
+  "footer": {
+    "rightsReserved": "Todos los derechos reservados.",
+    "businessPrompt": "¿Listo para construir tu marca en Estados Unidos?",
+    "businessLink": "Iniciar una conversación comercial",
+    "navigationLabel": "Navegación del pie de página",
+    "historyLine": "Desde 2000 / Canales comerciales de EE. UU.",
+    "placeholderNotice": "Los datos corporativos de contacto están pendientes de migración.",
+    "addressLabel": "Dirección",
+    "phoneLabel": "Teléfono",
+    "emailLabel": "Correo"
+  },
+  "cta": {
+    "viewServices": "Ver nuestros servicios",
+    "contactUs": "Contáctanos",
+    "learnMore": "Conocer más",
+    "backToServices": "Volver a todos los servicios"
+  },
+  "breadcrumbHome": "Inicio"
+}
